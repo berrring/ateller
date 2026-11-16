@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --graphite: #161616;
+    --off-white: #F2F0EB;
+    --cool-grey: #A6A6A2;
+    --accent-red: #B8392D;
+    --border-dark: #262626;
+    --border-light: #DDD9D0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #161616;
+    color: #F2F0EB;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #161616;
+    color: #F2F0EB;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Refined Swiss editorial typography defaults */
+  h1, h2, h3, h4 {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #161616;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #333333;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B8392D;
+  }
+}
+
+/* Strategic Section Utility Classes */
+.section-dark {
+  background-color: #161616;
+  color: #F2F0EB;
+  border-color: #262626;
+}
+
+.section-light {
+  background-color: #F2F0EB;
+  color: #161616;
+  border-color: #DDD9D0;
+}
+
+.section-pure-black {
+  background-color: #0E0E0E;
+  color: #F2F0EB;
+  border-color: #222222;
+}
+
+/* Editorial hairline rules */
+.hairline-dark {
+  border-color: #262626;
+}
+
+.hairline-light {
+  border-color: #DCD8CF;
+}
+
+/* Minimalist interaction focus */
+button:focus-visible, a:focus-visible {
+  outline: 2px solid #B8392D;
+  outline-offset: 2px;
+}
